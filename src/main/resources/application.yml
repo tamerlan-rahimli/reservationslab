@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: reservationslab
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/reservationslab
+    username: postgres
+    password: Compaq_610
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    open-in-view: false
+  liquibase:
+    change-log: classpath:liquibase/change-log-master.yml
+
+
